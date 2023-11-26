@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="Pharma_Sage.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharma_Sage</title>
+    <!-- Bootstrap CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Kanit:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/regular.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/solid.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/duotone.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: linear-gradient(45deg, #1d5621, #79cc52, #00f5ff);        }
+
+        header {
+            background-image: linear-gradient(45deg, #020024, #5252cc, #00d4ff);
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        h1{
+/*            font-family: Kanit, sans-serif;*/
+            font-family: Dosis, sans-serif;
+        }
+        #logo {
+            max-width: 70px;
+            max-height: 70px;
+            border-radius: 50%;
+            text-align: left; 
+            margin-top: 3px;
+        }
+
+        #search-bar {
+            margin: 20px;
+            padding: 10px;
+            font-size: 16px;
+        }
+        #Pharma{
+            padding-top: 10px;
+            padding-right: 200px;
+        }
+        main {
+            padding: 20px;
+        }
+        .title-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .col{
+            text-align: left;
+        }
+        button {
+              display: inline-block;
+              padding: 15px 25px;
+              font-size: 24px;
+              cursor: pointer;
+              text-align: center;
+              margin-top: 50px;
+              margin-left: 700px;
+              text-decoration: none;
+              outline: none;
+              color: #fff;
+              background-color: #04AA6D;
+              border: none;
+              border-radius: 12px;
+              box-shadow: 0 5px #999;
+            }
+
+            button:hover {background-color: #3e8e41}
+
+            button:active {
+              background-color: #3e8e41;
+              box-shadow: 0 5px #666;
+              transform: translateY(4px);
+          }
+
+        #Search{
+            margin-left: 350px;
+        }
+        #c1{
+            height: 500px;
+            width: 600px;
+            background-color: #a8a2a2;
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+         #c2{
+            height: 500px;
+            width: 600px;
+            background-color: #a8a2a2;
+            margin-right: 10px;
+         }
+         #c3{
+            height: 500px;
+            width: 600px;
+            background-color: #a8a2a2;
+            margin-right: 10px;
+         }
+         #cmain{
+            height: 550px;
+            width: 1500px;
+            background-image: linear-gradient(45deg, #1d5621, #79cc52, #00f5ff);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: -195px;
+
+         }
+         h3{
+            color: black;
+            padding-left: 10px;
+            padding-top: 10px;
+            font-family: Kanit, sans-serif;
+         }
+       i{
+      /*  font-size: 20px;
+        margin-right: 9px;
+        padding-top: 30px;
+       }
+       #icons{
+        margin-left: 400px;
+       }*/
+    </style>
+</head>
+<body>
+    <header class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <img id="logo" src="Pharma_Sage.jpg" alt="Your Logo">
+
+            </div>
+            <div class="col" id="Pharma">
+                <h1>Pharma Sage</h1>
+            </div>
+            <!-- <div class="col" id="icons">
+                <i class="fa-solid fa-house" id="home"></i>
+                <i class="fa-solid fa-circle-info" id="info"></i>
+                <i class="fa-solid fa-comment-medical"></i>
+            </div> -->
+        </div>
+    </header>
+
+    <div id="search-bar" class="container">
+        <div class="input-group">
+            <input type="text" class="form-control" id="Search" placeholder="Search...">
+        </div>
+
+        <div class="input-group-append">
+                <button class="btn btn-primary" id="button" type="button">Search</button>
+        </div>
+    </div>
+
+    <main class="container">
+        <div id="cmain">
+
+       <div id="c1">
+           <h3>Disease Cause:</h3>
+           <div id="cause">
+               
+           </div>
+       </div>
+       <div id="c2">
+           <h3>Symptoms:</h3>
+           <div id="Symptoms">
+               
+           </div>
+       </div>
+       <div id="c3">
+           <h3>Medication:</h3>
+           <div id="med">
+               
+           </div>
+       </div>
+    </div>
+    </main>
+    
+      
+ </body>
